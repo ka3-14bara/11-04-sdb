@@ -15,6 +15,7 @@
 
 ### Ответ 1
 
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/2b54b6f0-55e8-4bbc-8f47-b4d48f3f20b5)
 
 
 ---
@@ -30,7 +31,9 @@
 ---
 ### Решение 2
 
-
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/fcbe92ac-6e7a-47f3-8d72-67a7892b2b37)
+![Снимок экрана 2024-06-08 184327](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/a95297b3-f8c4-435b-a89b-1708fba230fe)
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/2576e199-0d70-4691-a2cc-2f3724e09814)
 
 ---
 
@@ -44,11 +47,28 @@ $ rabbitmqctl cluster_status
 ```
 Для закрепления материала снова запустите скрипт producer.py и приложите скриншот выполнения команды на каждой из нод:
 
+```
 $ rabbitmqadmin get queue='hello'
+```
 
 ---
 
 ### Решение 3
 
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/21deb925-96df-4b85-8eb1-427eb88bcd5e)
+
+вывод у команды
+```
+$ rabbitmqctl cluster_status
+```
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/d73b5228-11d0-4e52-b0c1-a2a3c1be9ba7)
+
+Следующая команда дает некорректный вывод,
+```
+$ rabbitmqadmin get queue='hello'
+```
+так как кластер развернут в докере. Вот вывод при попытке выполнения этой команды в контейнере:
+![Снимок экрана 2024-06-08 182248](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/cdc5ff04-df69-4049-bfcf-f7bdf18270e9)
+![image](https://github.com/ka3-14bara/11-04-sdb/assets/142439642/0d2b9508-dd35-49fc-a538-689d804a46f2)
 
 ---
